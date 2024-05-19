@@ -2,6 +2,8 @@ html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
@@ -16,8 +18,11 @@ body {
 }
 footer{
     background-color: black;
-    margin: -10px;
-    padding: -5px;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    position:relative;
+    width: 100vw;
 }
 #copyright-message{
     text-align: center;
@@ -27,18 +32,18 @@ footer{
 #code {
     background-color: black;
     color: white;
-    border: 2px groove #ccc; /* Improved border style */
-    margin: 20px; /* Adjusted margin for better layout */
-    padding: 20px; /* Added padding for spacing */
-    text-align: left; /* Ensures left alignment */
-    overflow: scroll; /* Added to handle overflow */
- 
+    border: solid;
+    justify-content: left;
+    left:auto;
+    overflow:hidden;
+    width: 50vw;
+
 }
 
 code {
-    font-family: 'Trebuchet MS', sans-serif; /* Added fallback font */
+    font-family: 'Trebuchet MS', sans-serif; 
     font-size: 14px;
-    text-align: left; /* Ensures left alignment */
+    text-align: left;
 }
 
 
