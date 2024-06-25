@@ -1,23 +1,34 @@
+@keyframes gradientAnimation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+  }
+
 html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(to left, rgb(63, 113, 1), rgb(131, 227, 149));	
+    background-size: 200% 200%; 
+	animation: gradientAnimation 5s ease infinite;
 }
 
-body {
-    background-color: beige;
-}
 nav {
-    border: none;
     border-radius: 50px;
     padding: 0.5em 1em;
-    display: flex;           
+    display: flex;        
     justify-content: space-between; 
-    align-items: center;  
-    background-color: red;    
-  }
+    align-items: center;
+    position: sticky;
+    top: 0;             
+    z-index: 100;       
+    width: 100%;   
+    border: 5px solid gray;  
+    background-color:blanchedalmond;   
+}
+
 
   nav a {
     color: black;
@@ -31,6 +42,7 @@ nav {
 
 nav a:hover{
     color: white;
+    background-color: black;
 }
 
 
